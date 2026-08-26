@@ -1,0 +1,132 @@
+/* === IMPORTAÇÃO DE FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+Fontes Disponíveis:
+// Sugiro usar esta 
+font-family: "Urbanist", sans-serif; 
+font-family: "Fredoka", sans-serif;
+font-family: "Epilogue", sans-serif;
+font-family: "Nunito", sans-serif;
+font-family: "Oswald", sans-serif;
+*/
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+html {
+    font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
+    padding: 5px 8px 20px 8px;
+    text-align: center;
+    background-color: #E9EAF8;
+}
+
+header nav ul li {
+    padding: 2px 0 8px 0;
+    font-size: 0.8rem;
+}
+
+header nav ul li.C {
+    background-color: #747ED1;
+    border-radius: 40px;
+    padding: 20px 2px 20px 2px;
+    margin: 0 20vw;
+    color: aliceblue;
+    margin-bottom: 50px;
+}
+
+section.um {
+    background-color: #51225E;
+    border-radius: 10px;
+    font-size: 1.01rem;
+    color: aliceblue;
+    padding: 70px 40px;
+    margin-bottom: 50px;
+}
+
+section.um h2 {
+    font-weight: bolder;
+    font-size: 1.89rem;
+    padding: 0 0 20px 0;
+}
+
+section.dois {
+    background-color: rgb(247, 247, 247);
+    padding: 11vw;
+    margin-bottom: 50px;
+}
+
+section.dois h2 {
+    font-weight: bolder;
+    font-size: 1.89rem;
+    padding: 0 0 20px 0;
+}
+
+section.dois p.M {
+    background-color: #cacdee;
+    border-radius: 20vw;
+    padding: 20px 2px 20px 2px;
+    margin: 0 20vw;
+    color: rgb(67, 144, 211);
+    margin: 20px 0 50px 0;
+}
+
+section.tres {
+    background-color: rgb(250, 250, 250);
+    padding: 50px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+section.tres h2 {
+    font-weight: bolder;
+    font-size: 1.69rem;
+    padding: 0 0 20px 0;
+}
+
+section.tres ul li h3 {
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 20px;
+}
+
+footer {
+    background-color: #21262C;
+    color: aliceblue;
+    font-weight: lighter;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul li {
+    width: 5rem;
+    padding: 20px 0 0 0;
+}
+
+
+/* MEDIA QUERY - DESKTOP */
+@media screen and (min-width: 600px) {
+    section.um {
+        padding: 90px;
+    }
+    section.dois{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    section.dois div{
+        width: 30rem;
+    }
+    section.tres div ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer ul li img{
+        width: 2rem;
+        height: auto;
+    }
+}
