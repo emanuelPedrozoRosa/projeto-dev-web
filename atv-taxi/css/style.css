@@ -23,7 +23,9 @@ li.get a {
 }
 
 section.banner {
-    background: url(../images/background-banner.png);
+    background: url(../images/background-banner.png) no-repeat;
+    background-size: auto 100% ;
+
 }
 
 h2 {
