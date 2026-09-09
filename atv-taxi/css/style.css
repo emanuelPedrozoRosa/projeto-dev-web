@@ -1,0 +1,85 @@
+html {
+    font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
+    text-align: center;
+    color: #252B42;
+}
+
+header {
+    padding: 20px 0 10px 0;
+}
+
+li.log a {
+    color: #FBBC05;
+    margin: 30px;
+    display: inline-block;
+}
+
+li.get a {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #FBBC05;
+    padding: 20px 9px;
+    border-radius: 50px;
+}
+
+section.banner {
+    background: url(../images/background-banner.png);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+p.pqn {
+    font-weight: lighter;
+    color: #5a5a5a;
+    font-size: 0.9rem;
+    margin: 0 0 20px 0;
+}
+
+section.banner a.app {
+    background-color: #252B42;
+    color: #ffffff;
+    padding: 27px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+section.ride {
+    margin: 20px 60px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 500px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.67rem;
+    }
+
+    header nav ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    header nav ul li.log a:hover {
+        color: #135000;
+    }
+
+    header nav ul li.get a:hover {
+        background: none;
+        border: 2px solid #FBBC05;
+        color: #FBBC05;
+    }
+    section.banner{
+
+    }
+}
