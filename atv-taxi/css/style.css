@@ -1,5 +1,5 @@
 html {
-    font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
+    font-size: clamp(1rem, 2vw + 0.8rem, 2rem);
     text-align: center;
     color: #252B42;
 }
@@ -24,8 +24,17 @@ li.get a {
 
 section.banner {
     background: url(../images/background-banner.png) no-repeat;
-    background-size: auto 100% ;
+    background-size: auto 100%;
+    padding: 3vw 5vw;
 
+}
+
+section.banner div.imagem {
+    display: none;
+}
+
+section.banner h2 {
+    font-size: 2rem;
 }
 
 h2 {
@@ -36,21 +45,39 @@ h2 {
 p.pqn {
     font-weight: lighter;
     color: #5a5a5a;
-    font-size: 0.9rem;
+    font-size: 0.67rem;
     margin: 0 0 20px 0;
 }
 
-section.banner a.app {
+section.banner p a.app {
     background-color: #252B42;
     color: #ffffff;
     padding: 27px;
     border-radius: 10px;
     display: inline-block;
     margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+section.banner p {
+    display: flex;
+    gap: 12px;
+}
+
+section.banner p img {
+    height: 1rem;
+    display: inline-block;
+    margin: 0 6.7px 0 0;
 }
 
 section.ride {
-    margin: 20px 60px;
+    text-align: center;
+    padding: 3vw 5vw;
+}
+
+section.ride div.imagi img {
+    display: none;
 }
 
 h3 {
@@ -64,6 +91,12 @@ h3 {
         justify-content: space-between;
         align-items: center;
         font-size: 0.67rem;
+        margin: 1.3vw 4vw 1.3vw 4vw;
+    }
+
+    section.banner h2,
+    section.banner p {
+        text-align: left;
     }
 
     header nav ul {
@@ -81,7 +114,41 @@ h3 {
         border: 2px solid #FBBC05;
         color: #FBBC05;
     }
-    section.banner{
 
+    section.banner div.imagem {
+        display: block;
+    }
+
+    section.banner {
+        display: flex;
+    }
+
+    section.banner div.imagem img.imagememe {
+        display: flex;
+    }
+
+    section.ride div.imagi img {
+        display: block;
+    }
+
+    section.ride>div {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    section.ride div.lista ul{
+        display: flex;
+        gap: 3vw;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    section.ride div.lista ul li{
+        width: 40%;
+    }
+    section.ride div div{
+        width: 50%;
+    }
+    section.ride >p{
+        padding: 5vw 15vw;
     }
 }
