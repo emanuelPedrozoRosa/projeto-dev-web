@@ -1,0 +1,175 @@
+/* === IMPORTAÇÃO DE FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+Fontes Disponíveis:
+// Sugiro usar esta 
+font-family: "Urbanist", sans-serif; 
+font-family: "Fredoka", sans-serif;
+font-family: "Epilogue", sans-serif;
+font-family: "Nunito", sans-serif;
+font-family: "Oswald", sans-serif;
+*/
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+html {
+    font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #05073C;
+
+}
+
+header {
+    padding: 20px 40px 28.6px 40px;
+    background-color: #FEF8F5;
+}
+
+header ul li.homer {
+    color: #ED672B;
+}
+
+header ul li {
+    padding: 5px;
+}
+
+header ul li.butao {
+    background-color: #ED672B;
+    margin: 7px 20px;
+    padding: 16.7px 0;
+    color: #FEF8F5;
+    border-radius: 30px;
+}
+
+header ul li.butao:hover {
+    border-color: #ED672B;
+    border-width: 2px;
+    background-color: #FEF8F5;
+    color: #ED672B;
+}
+
+section.primeiro {
+    font-size: 3rem;
+    padding: 40px 40px 0 40px;
+    color: #ED672B;
+    font-weight: bolder;
+    background-color: #FEF8F5;
+}
+
+section.segundo {
+    padding: 0 40px 20px 40px;
+    text-align: left;
+}
+
+section.segundo h2 {
+    font-weight: bolder;
+    padding: 30px 20px 16.7px 0;
+    font-size: 1.67rem;
+}
+
+section.segundo img {
+    width: 26.7%;
+}
+
+section.segundo h3 {
+    font-size: 1.2rem;
+}
+
+section.segundo ul li p {
+    font-size: 0.87rem;
+    font-weight: lighter;
+}
+
+section.terceiro {
+    padding: 30px 40px;
+    background-color: #f8f8ff;
+}
+
+section.terceiro h3 {
+    font-size: 1.67rem;
+    font-weight: bolder;
+}
+
+section.terceiro img {
+    padding: 60px 0;
+}
+
+section.quarto {
+    background-color: #ED672B;
+    color: #f8f8ff;
+    padding: 30px 40px 0 40px;
+}
+
+section.quarto h3 {
+    font-weight: bolder;
+    padding: 30px 20px 16.7px 0;
+    font-size: 1.67rem;
+}
+
+section.quarto p button {
+    background-color: #FEF8F5;
+    margin: 7px 20px;
+    padding: 26.7px 36.7px;
+    color: #ED672B;
+    border-radius: 40px;
+}
+
+section.quarto p button:hover {
+    background-color: #05073C;
+    color: #FEF8F5;
+}
+
+footer {
+    background-color: #05073C;
+    color: #f8f8ff;
+    padding: 20px 40px 28.6px 40px;
+}
+
+footer div {
+    padding: 20px 0;
+}
+
+footer p,
+footer nav ul li {
+    font-size: 0.7rem;
+    padding: 5px;
+}
+
+/* MEDIA QUERY - DESKTOP */
+@media screen and (min-width: 600px) {
+    html {
+        font-size: clamp(1rem, 1vw + 0.8rem, 1.67rem);
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    header ul {
+        display: flex;
+        gap: 20px;
+    }
+    section.segundo ul{
+        display: flex;
+        gap: 20vw;
+        padding-bottom: 11vw;
+    }
+    section.terceiro{
+        padding: 0 0 20vw 0;
+    }
+    section.terceiro p{
+        margin: 0 20vw;
+    }
+    section.quarto {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer{
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 40px 11vw 40px;
+    }
+
+}
